@@ -14,17 +14,17 @@ Put life first. Allocate time and energy intentionally to support health, rest, 
 
 **Implications**  
 _Design life before workload._  
-- Structure the calendar to include rest, joy, and intentional gaps;  
-- Respect work boundaries to protect space for non-work living;  
+- Structure the calendar to include rest, joy, and intentional breaks at all time scales: day, week, season and year;  
+- Respect work boundaries to protect space for living;  
 - Use disciplined planning to avoid chaos and distraction;  
 - Optimize tasks to reduce fatigue and increase mental clarity;  
 - Build routines that make space for recovery and focus;
 
 **Moderation Clause**  
 _CALM is not passivity — it is control._  
-- Work deeply and stay undistracted during focused hours;  
+- Work deeply and stay undistracted during working hours;  
 - Accept periods of intense effort when critical;  
-- Balance marathons with planned recovery;  
+- Balance working marathons with planned recovery;  
 - Sprint strategically when launch or delivery demands it;  
 - Use rhythm, not avoidance, to guide allocation;
 
