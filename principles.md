@@ -11,7 +11,9 @@ A set of universal laws to guide thoughtful, sustainable, and high-impact work.
 
 **Equation**
 
-Time = Life _and_ Discipline = Freedom
+Time = Life
+
+Discipline = Freedom
 
 **Explanation**  
 Put life first. Work is a means. Life is the end. The purpose of work is to serve a fulfilling life — not to consume it. A meaningful life must be lived not only in the future, but in the present: through joy, fun, rest, sports, relationships, nature, and anything that brings meaning. Work must enable these things, not postpone them indefinitely. Structure time to protect life. Design a calendar that balance momentum with presence. Optimize processes not for productivity alone, but to make room for what truly matters — now and later.
