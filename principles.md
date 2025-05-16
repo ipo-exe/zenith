@@ -10,23 +10,24 @@ A set of universal laws to guide thoughtful, sustainable, and high-impact work.
 **Conscious Allocation of Life and Momentum**
 
 **Explanation**  
-Put life first. Allocate time and energy intentionally to support health, rest, relationships, and meaningful living. Structure work with discipline and optimize workflows to preserve time for what matters most.
+Put life first. Work is a means. Life is the end.
+The purpose of work is to serve a fulfilling life — not to consume it. A meaningful life must be lived not only in the future, but in the present: through joy, fun, rest, sports, relationships, nature, and anything that brings meaning. Work must enable these things, not postpone them indefinitely. Structure time to protect life. Design schedules that balance momentum with presence. Optimize processes not for productivity alone, but to make room for what truly matters — now and later.
 
 **Implications**  
-_Design life before workload._  
-- Structure the calendar to include rest, joy, and intentional breaks at all time scales: day, week, season and year;  
-- Respect work boundaries to protect space for living;  
-- Use disciplined planning to avoid chaos and distraction;  
-- Optimize tasks to reduce fatigue and increase mental clarity;  
-- Build routines that make space for recovery and focus;
+_Use time to prioritize life._  
+- Divide work into deep (creative/technical), administrative (logistics/operations), and networking (future-building);  
+- Batch these work types and schedule them thoughtfully to reduce switching costs;
+- Structure time across all scales — day, week, season and year;
+- Enforce strong boundaries between work and life to protect time for health, fun, and presence;
+- Optimize systems and workflows to make intentional space for meaning and rest;
 
 **Moderation Clause**  
-_CALM is not passivity — it is control._  
-- Work deeply and stay undistracted during working hours;  
-- Accept periods of intense effort when critical;  
-- Balance working marathons with planned recovery;  
-- Sprint strategically when launch or delivery demands it;  
-- Use rhythm, not avoidance, to guide allocation;
+_CALM is not passivity — it is controlled rhythm._  
+- Work with focus and discipline during structured time;
+- Accept moments of intense effort when they serve launch, delivery, or responsibility;
+- Recover intentionally after sprints, but don’t avoid them when needed;
+- Live fully in the present, but build systems that support a meaningful future;
+- CALM is not passivity — it is conscious design of effort and rest;
 
 ---
 
@@ -51,6 +52,31 @@ _Publishing is a signal, not a goal._
 - Respect constraints — reuse material later if needed;  
 - Don’t confuse visibility with impact — align both;  
 - Let refinement support relevance to the public, not you;
+
+---
+
+## GRACE  
+**Give Results A Clear Elegance**
+
+**Explanation**  
+Make the work beautiful.  
+Let every output — figure, text, report, dataset, codebase — carry a sense of elegance, clarity, and expressive form. Beauty gives meaning to the effort. A well-crafted diagram, a thoughtfully named function, a clean layout — all elevate the work beyond utility. Use creativity, visual clarity, and narrative style to inspire. Let the result reflect care.
+
+**Implications**  
+_Beauty is meaning made visible — and preferred._  
+- Design outputs to be clear, readable, and aesthetically pleasing;  
+- Use expressive documentation and thoughtful language to elevate perception;  
+- Name processes and structures creatively where appropriate, while preserving clarity;  
+- Refine figures and layouts for visual harmony, not just accuracy;  
+- When technical quality is equal, the more elegant and beautiful result will win the audience’s trust;
+
+**Moderation Clause**  
+_GRACE must serve communication, not ego._  
+- Do not over-polish — publish when clarity is achieved;  
+- Avoid treating every project as a masterpiece — the best version may come in the next project, not this one;  
+- Tailor beauty to the audience — keep outputs accessible, not overly personal or obscure;  
+- Use creativity in overarching concepts, but stick to clarity and standardization in technical naming;  
+- Let elegance enhance understanding — not replace it;
 
 ---
 
