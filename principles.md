@@ -6,7 +6,7 @@ A set of universal laws to guide thoughtful, sustainable, and high-impact work.
 
 ---
 
-## CALM  
+## 1. CALM  
 **Conscious Allocation of Life and Momentum**
 
 **Equation**
@@ -34,7 +34,7 @@ _CALM is not passivity — it is controlled rhythm._
 
 ---
 
-## PRINT  
+## 2. PRINT  
 **Publish Results or It’s Not There**
 
 **Equation**
@@ -62,7 +62,7 @@ _Publishing is not a goal but a proxy for impact._
 
 ---
 
-## GRACE  
+## 3. GRACE  
 **Give Results A Clear Elegance**
 
 **Equation**
@@ -90,7 +90,7 @@ _GRACE must serve communication, not ego._
 
 ---
 
-## DRY  
+## 4. DRY  
 **Don’t Repeat Yourself**
 
 **Equation**
@@ -118,7 +118,7 @@ _Not all reuse begins on day one._
 
 ---
 
-## KISS  
+## 5. KISS  
 **Keep It Simple and Smart**
 
 **Equation**
@@ -146,7 +146,7 @@ _Simplicity is a guide — not a limit._
 
 ---
 
-## DOCS  
+## 7. DOCS  
 **Document Or Considered it Scrap**
 
 **Equation**
@@ -174,7 +174,7 @@ _Documentation must evolve — not suffocate._
 
 ---
 
-## LOOP  
+## 8. LOOP  
 **Launch, Observe, Optimize, Progress**
 
 **Equation**
@@ -202,7 +202,7 @@ _Launch fast — but not sloppy._
 
 ---
 
-## SYNC  
+## 9. SYNC  
 **Scale Yield by Network Collaboration**
 
 **Equation**
