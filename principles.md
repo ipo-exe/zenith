@@ -20,7 +20,7 @@ _Use time to prioritize life._
 - Enforce strong boundaries between work and life to protect time for health, fun, and presence;
 - Optimize systems and workflows to make intentional space for meaning and rest;
 
-**Moderation Clause**  
+**Moderation**  
 _CALM is not passivity — it is controlled rhythm._  
 - Work with focus and discipline during structured time;
 - Accept moments of intense effort when they serve launch, delivery, or responsibility;
@@ -44,7 +44,7 @@ _Visibility is proof of value._
 - Extract and share publishable fragments when full release isn't possible;  
 - Let publication demonstrate usefulness and leave a portfolio trail;
 
-**Moderation Clause**  
+**Moderation**  
 _Publishing is a signal, not a goal._  
 - Avoid content dumping and shallow output volume;  
 - Only publish when quality and clarity are present;  
@@ -68,7 +68,7 @@ _Beauty is meaning made visible — and preferred._
 - Refine figures and layouts for visual harmony, not just accuracy;  
 - When technical quality is equal, the more elegant and beautiful result will win the audience’s trust;
 
-**Moderation Clause**  
+**Moderation**  
 _GRACE must serve communication, not ego._  
 - Do not over-polish — publish when clarity is achieved;  
 - Avoid treating every project as a masterpiece — the best version may come in the next project, not this one;  
@@ -92,7 +92,7 @@ _Let your work compound over time._
 - Design a retrieval system for stored data;  
 - Refactor when duplication appears — treat it as a signal;
 
-**Moderation Clause**  
+**Moderation**  
 _Not all reuse begins on day one._  
 - Avoid overbuilding before patterns emerge;  
 - Implement quick solutions when time is short;  
@@ -116,7 +116,7 @@ _Start simple — scale only with need._
 - Choose tools that are open, inspectable, and adaptable;  
 - Minimize interface complexity while maximizing clarity;
 
-**Moderation Clause**  
+**Moderation**  
 _Simplicity is a guide — not a limit._  
 - Accept necessary complexity when justified by function and efficiency;  
 - Avoid shallow minimalism that undermines robustness;  
@@ -140,7 +140,7 @@ _If it can't be explained, it can't be reused._
 - Preserve context, logic, and instructions for fast reentry;  
 - Maintain documentation with updates and clarity;
 
-**Moderation Clause**  
+**Moderation**  
 _Documentation must evolve — not suffocate._  
 - Avoid documenting resources that may be discarded quickly;  
 - Use lightweight formats and update progressively;  
@@ -164,7 +164,7 @@ _Draft, then improve with purpose._
 - Treat the first version as operational testing or benchmarking;  
 - Improve iteratively — and move on when it is sufficient;
 
-**Moderation Clause**  
+**Moderation**  
 _Launch fast — but not sloppy._  
 - Ensure public first versions meet minimal quality thresholds;  
 - Polish front-end (form) more than back-end (function);  
