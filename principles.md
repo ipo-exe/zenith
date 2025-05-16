@@ -200,6 +200,8 @@ _Launch fast — but not sloppy._
 - Iterate only when feedback or usage warrants it;  
 - Avoid refining invisible systems unless needed;
 
+---
+
 ## SYNC  
 **Scale Yield by Network Collaboration**
 
