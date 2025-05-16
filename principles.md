@@ -146,7 +146,7 @@ _Simplicity is a guide — not a limit._
 
 ---
 
-## 7. DOCS  
+## 6. DOCS  
 **Document Or Considered it Scrap**
 
 **Equation**
@@ -174,7 +174,7 @@ _Documentation must evolve — not suffocate._
 
 ---
 
-## 8. LOOP  
+## 7. LOOP  
 **Launch, Observe, Optimize, Progress**
 
 **Equation**
@@ -202,7 +202,7 @@ _Launch fast — but not sloppy._
 
 ---
 
-## 9. SYNC  
+## 8. SYNC  
 **Scale Yield by Network Collaboration**
 
 **Equation**
