@@ -1,6 +1,6 @@
 # ZENITH
 
-# GENERAL PRINCIPLES
+# General Principles
 
 A set of universal laws to guide thoughtful, sustainable, and high-impact work.
 
@@ -31,7 +31,7 @@ _CALM is not passivity — it is controlled rhythm._
 ---
 
 ## PRINT  
-**Publish Results Or It’s Not There**
+**Publish Results or It’s Not There**
 
 **Explanation**  
 Make the work visible. Every project must yield a sharable result that is beautiful, understandable, and impactful. If it’s not visible, it’s as if it doesn’t exist.
