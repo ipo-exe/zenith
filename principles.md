@@ -10,8 +10,7 @@ A set of universal laws to guide thoughtful, sustainable, and high-impact work.
 **Conscious Allocation of Life and Momentum**
 
 **Explanation**  
-Put life first. Work is a means. Life is the end.
-The purpose of work is to serve a fulfilling life — not to consume it. A meaningful life must be lived not only in the future, but in the present: through joy, fun, rest, sports, relationships, nature, and anything that brings meaning. Work must enable these things, not postpone them indefinitely. Structure time to protect life. Design schedules that balance momentum with presence. Optimize processes not for productivity alone, but to make room for what truly matters — now and later.
+Put life first. Work is a means. Life is the end. The purpose of work is to serve a fulfilling life — not to consume it. A meaningful life must be lived not only in the future, but in the present: through joy, fun, rest, sports, relationships, nature, and anything that brings meaning. Work must enable these things, not postpone them indefinitely. Structure time to protect life. Design schedules that balance momentum with presence. Optimize processes not for productivity alone, but to make room for what truly matters — now and later.
 
 **Implications**  
 _Use time to prioritize life._  
@@ -59,8 +58,7 @@ _Publishing is a signal, not a goal._
 **Give Results A Clear Elegance**
 
 **Explanation**  
-Make the work beautiful.  
-Let every output — figure, text, report, dataset, codebase — carry a sense of elegance, clarity, and expressive form. Beauty gives meaning to the effort. A well-crafted diagram, a thoughtfully named function, a clean layout — all elevate the work beyond utility. Use creativity, visual clarity, and narrative style to inspire. Let the result reflect care.
+Make the work beautiful. Let every output — figure, text, report, dataset, codebase — carry a sense of elegance, clarity, and expressive form. Beauty gives meaning to the effort. A well-crafted diagram, a thoughtfully named function, a clean layout — all elevate the work beyond utility. Use creativity, visual clarity, and narrative style to inspire. Let the result reflect care.
 
 **Implications**  
 _Beauty is meaning made visible — and preferred._  
