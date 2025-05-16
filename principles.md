@@ -10,6 +10,7 @@ A set of universal laws to guide thoughtful, sustainable, and high-impact work.
 **Conscious Allocation of Life and Momentum**
 
 **Equation**
+
 Time = Life _and_ Discipline = Freedom
 
 **Explanation**  
@@ -37,6 +38,7 @@ _CALM is not passivity — it is controlled rhythm._
 **Publish Results or It’s Not There**
 
 **Equation**
+
 To Publish = To Exist
 
 **Explanation**  
@@ -64,6 +66,7 @@ _Publishing is not a goal but a proxy for impact._
 **Give Results A Clear Elegance**
 
 **Equation**
+
 Beauty = Value
 
 **Explanation**  
@@ -91,6 +94,7 @@ _GRACE must serve communication, not ego._
 **Don’t Repeat Yourself**
 
 **Equation**
+
 Reusability = Efficiency
 
 **Explanation**  
@@ -118,6 +122,7 @@ _Not all reuse begins on day one._
 **Keep It Simple and Smart**
 
 **Equation**
+
 Simplicity = Flexibility
 
 **Explanation**  
@@ -145,6 +150,7 @@ _Simplicity is a guide — not a limit._
 **Document Or Considered it Scrap**
 
 **Equation**
+
 Documentation = Memory
 
 **Explanation**  
@@ -153,8 +159,8 @@ Undocumented work is disposable garbage. Documentation is the memory, the entryp
 **Implications**  
 _If it can't be explained, it can't be reused._  
 - Create a README or clear entrypoint note for every project;  
-- Use docstrings, auxiliar notes and inline comments strategically;  
-- Automate documentation whenever possible;  
+- Use notes and comments strategically;  
+- Apply standard naming rules and automate documentation whenever possible;  
 - Preserve context, logic, and instructions for fast reentry;  
 - Maintain documentation with updates and clarity;
 
@@ -172,6 +178,7 @@ _Documentation must evolve — not suffocate._
 **Launch, Observe, Optimize, Progress**
 
 **Equation**
+
 Improving = Learning
 
 **Explanation**  
@@ -197,6 +204,7 @@ _Launch fast — but not sloppy._
 **Scale Yield by Network Collaboration**
 
 **Equation**
+
 Scale = Collaboration
 
 **Explanation**  
