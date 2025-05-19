@@ -104,16 +104,16 @@ Avoid duplication. Build reusable systems. Every effort should contribute to lon
 
 **Implications**  
 _Let your work compound over time._  
-- Use automation to reduce manual repetition;
-- Design templates for projects, notes, documents, code, etc.; 
-- Write reusable code using modules, packages and libraries;  
-- Design a system for store, update and retrieve data;  
-- Refactor when duplication appears — treat it as a signal;
+- Evaluate how every project can contribute to some form of resource that is useful across other projects (now and future); 
+- Use automation to reduce manual repetition of boring predictable protocols;
+- Design templates for everything: projects, notes, documents, presentations, code, etc.; 
+- Write reusable code by writing generic modules, packages and libraries;  
+- Design a system for store, retrieve and update datasets so you don't need to download and organize it every time;  
 
 **Moderation**  
 _Not all reuse begins on day one._  
 - Avoid overbuilding before patterns emerge;  
-- Implement quick solutions when time is short;  
+- Use simple documentation to implement fast solutions when time is short;  
 - Expand generality only when demand exists;  
 - Improve systems iteratively, not all at once;  
 - Reusability is a horizon — not a prerequisite;
@@ -132,7 +132,7 @@ Favor simplicity. Let complexity emerge from the simple parts. Build systems wit
 
 **Implications**  
 _Start simple — scale only with need._  
-- Use lightweight libraries and avoid unnecessary dependencies;  
+- Use lightweight tools and avoid unnecessary dependencies;  
 - Favor modular structures over tangled systems;  
 - Write code and docs that are clear without deep explanation;  
 - Choose tools that are open, inspectable, and adaptable;  
@@ -222,11 +222,15 @@ _Scale emerges from structured cooperation._
 - Share credit, visibility, and rewards — avoid hoarding resources or recognition;  
 - Build communication systems with pre-scheduled meetings, asynchronous decision logs, and minimal friction;
 
-**Moderation Clause**  
+**Moderation**  
 _Sync does not mean swarm._  
 - Avoid oversized teams that dilute responsibility and reduce attachment to the work;  
+- Deep creative work is only possible during immersive isolation, so enable autonomy with mutual trust;  
 - Prevent communication overload by batching messages at the week scale or above;
 - Assign quality oversight roles — do not crowd the review process;  
-- Enable autonomy with mutual trust, not constant supervision;  
 - Maintain a peer-based structure with diverse roles — but shared commitment to excellence;
+
+---
+
+
 
