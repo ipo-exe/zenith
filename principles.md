@@ -1,6 +1,6 @@
-# ZENITH
+# zenith
 
-# General Principles
+# On General Principles
 
 A set of universal laws to guide thoughtful, sustainable, and high-impact work.
 
