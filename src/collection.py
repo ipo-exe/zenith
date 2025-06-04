@@ -1,4 +1,5 @@
 from .base import MbaE
+import pandas as pd
 
 
 class Collection(MbaE):
@@ -116,10 +117,10 @@ class Collection(MbaE):
         self.object_alias = "COL"
         # Set the name and baseobject attributes
         self.baseobject = base_object
-        self.baseobject_name = base_object.__name__
+        self.baseobject_name = base_object.name
 
         # Initialize the catalog with an empty DataFrame
-        dict_metadata = self.baseobject().get_metadata()
+        dict_metadata = self.baseobject.get_metadata()
 
         self.catalog = pd.DataFrame(columns=dict_metadata.keys())
 
