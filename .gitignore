@@ -1,0 +1,17 @@
+# Python cache
+*.pyc
+__pycache__
+*.pytest_cache
+
+# IDE Config files
+.vscode/
+.idea/
+
+# Virtual env
+.venv/
+
+# Formatting
+.ruff_cache/
+
+# Auxiliar
+.qodo
