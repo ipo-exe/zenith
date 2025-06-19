@@ -17,7 +17,7 @@ class Collection(MbaE):
 
     **Main Methods:**
 
-    - __init__(self, base_object, name="myCatalog"): Initializes a new ``Collection`` with a base object.
+    - __init__(self, base_class, name="myCatalog"): Initializes a new ``Collection`` with a base object.
     - update(self, details=False): Updates the ``Collection`` catalog.
     - append(self, new_object): Appends a new object to the ``Collection``.
     - remove(self, name): Removes an object from the ``Collection``.
@@ -41,7 +41,7 @@ class Collection(MbaE):
     .. code-block:: python
 
         # instantiate Collection object
-        c = Collection(base_object=MbaE, name="Collection")
+        c = Collection(base_class=MbaE, name="Collection")
 
     Append a new object to the ``Collection``:
 
@@ -97,11 +97,11 @@ class Collection(MbaE):
 
     """
 
-    def __init__(self, base_object, name="MyCollection", alias="Col0"):
+    def __init__(self, base_class, name="MyCollection", alias="Col0"):
         """Initialize the ``Collection`` object.
 
-        :param base_object: ``MbaE``-based object for collection
-        :type base_object: :class:`MbaE`
+        :param base_class: ``MbaE``-based class for collection
+        :type base_class: :class:`MbaE`
 
         :param name: unique object name
         :type name: str
@@ -116,11 +116,11 @@ class Collection(MbaE):
         # ------------ set pseudo-static ----------- #
         self.object_alias = "COL"
         # Set the name and baseobject attributes
-        self.baseobject = base_object
-        self.baseobject_name = base_object.name
+        self.baseobject = base_class
+        self.baseobject_name = base_class.__name__
 
         # Initialize the catalog with an empty DataFrame
-        dict_metadata = self.baseobject.get_metadata()
+        dict_metadata = self.baseobject().get_metadata()
 
         self.catalog = pd.DataFrame(columns=dict_metadata.keys())
 

@@ -1,3 +1,4 @@
+import pandas as pd
 
 class MbaE:
     """
@@ -6,6 +7,7 @@ class MbaE:
     .. important::
 
         **Mba'e is the origin**. The the very-basic almost-zero level object.
+        Basically, it implements a method to return metadata as a DataFrame.
         Deeper than here is only the Python builtin ``object`` class.
 
 
@@ -61,7 +63,7 @@ class MbaE:
 
     """
 
-    def __init__(self, name: str="MyMbaE", alias: None | str=None):
+    def __init__(self, name: str="MyMbaE", alias: str | None=None):
         """Initialize the ``MbaE`` object.
 
         :param name: unique object name
@@ -79,10 +81,10 @@ class MbaE:
         self.object_alias = "mbae"
 
         # name
-        self.name = name
+        self.name: str = name
 
         # alias
-        self.alias = alias
+        self.alias: str | None = alias
 
         # handle None alias
         if self.alias is None:
@@ -101,7 +103,7 @@ class MbaE:
         """The ``MbaE`` string"""
         str_type = str(type(self))
         df = self.get_metadata_df()
-        str_df_metadata = self.get_metadata_df().to_string(index=False)
+        str_df_metadata: str = df.to_string(index=False)
         str_out = "[{} ({})]\n{} ({}):\t{}\n{}".format(
             self.name,
             self.alias,
@@ -119,7 +121,7 @@ class MbaE:
         else:
             self.alias = self.name[:]
 
-    def _set_fields(self):
+    def _set_fields(self) -> None:
         """Set fields names"""
 
         # Attribute fields
@@ -131,7 +133,7 @@ class MbaE:
         self.mdata_val_field = "Value"
         # ... continues in downstream objects ... #
 
-    def get_metadata(self):
+    def get_metadata(self) -> dict[str, str]:
         """Get a dictionary with object metadata.
 
         .. note::
@@ -147,7 +149,7 @@ class MbaE:
         }
         return dict_meta
 
-    def get_metadata_df(self):
+    def get_metadata_df(self) -> pd.DataFrame:
         """Get a :class:`pandas.DataFrame` created from the metadata dictionary
 
         :return: :class:`pandas.DataFrame` with ``Attribute`` and ``Value``
@@ -162,7 +164,7 @@ class MbaE:
         )
         return df_metadata
 
-    def set(self, dict_setter):
+    def set(self, dict_setter: dict):
         """Set selected attributes based on an incoming dictionary
 
         :param dict_setter: incoming dictionary with attribute values
