@@ -1,0 +1,45 @@
+src.dataset package
+===================
+
+Submodules
+----------
+
+src.dataset.base module
+-----------------------
+
+.. automodule:: src.dataset.base
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+src.dataset.budget module
+-------------------------
+
+.. automodule:: src.dataset.budget
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+src.dataset.file\_sys module
+----------------------------
+
+.. automodule:: src.dataset.file_sys
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+src.dataset.record\_table module
+--------------------------------
+
+.. automodule:: src.dataset.record_table
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: src.dataset
+   :members:
+   :show-inheritance:
+   :undoc-members:
