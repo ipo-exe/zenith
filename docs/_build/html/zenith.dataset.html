@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>zenith.dataset package &#8212; Zenith 0.0.1 documentation</title>
+    <title>zenith.dataset package &#8212; zenith 0.0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -32,8 +32,8 @@
 
           <div class="body" role="main">
             
-  <section id="module-zenith.dataset">
-<span id="zenith-dataset-package"></span><h1>zenith.dataset package<a class="headerlink" href="#module-zenith.dataset" title="Link to this heading">¶</a></h1>
+  <section id="zenith-dataset-package">
+<h1>zenith.dataset package<a class="headerlink" href="#zenith-dataset-package" title="Link to this heading">¶</a></h1>
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 </section>
@@ -41,7 +41,7 @@
 <span id="zenith-dataset-base-module"></span><h2>zenith.dataset.base module<a class="headerlink" href="#module-zenith.dataset.base" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="zenith.dataset.base.DataSet">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zenith.dataset.base.</span></span><span class="sig-name descname"><span class="pre">DataSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'MyDataSet'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DS0'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.base.DataSet" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zenith.dataset.base.</span></span><span class="sig-name descname"><span class="pre">DataSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MyDataSet'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DS0'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/base.html#DataSet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.base.DataSet" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="zenith.html#zenith.base.MbaE" title="zenith.base.MbaE"><code class="xref py py-class docutils literal notranslate"><span class="pre">MbaE</span></code></a></p>
 <p>The core <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> base/demo object.
 Expected to hold one <code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>.
@@ -105,9 +105,17 @@ custom applications.</p>
 <span class="n">ds</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>)</p></li>
+<li><p><strong>alias</strong> (<em>str</em>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.base.DataSet.get_metadata">
-<span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.base.DataSet.get_metadata" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/base.html#DataSet.get_metadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.base.DataSet.get_metadata" title="Link to this definition">¶</a></dt>
 <dd><p>Get a dictionary with object metadata.
 Expected to increment superior methods.</p>
 <div class="admonition note">
@@ -126,7 +134,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.base.DataSet.load_data">
-<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.base.DataSet.load_data" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/base.html#DataSet.load_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.base.DataSet.load_data" title="Link to this definition">¶</a></dt>
 <dd><p>Load data from file. Expected to overwrite superior methods.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -143,7 +151,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.base.DataSet.set">
-<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_setter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.base.DataSet.set" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_setter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/base.html#DataSet.set"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.base.DataSet.set" title="Link to this definition">¶</a></dt>
 <dd><p>Set selected attributes based on an incoming dictionary.
 Expected to increment superior methods.</p>
 <dl class="field-list simple">
@@ -158,7 +166,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.base.DataSet.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.base.DataSet.update" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/base.html#DataSet.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.base.DataSet.update" title="Link to this definition">¶</a></dt>
 <dd><p>Refresh all mutable attributes based on data (includins paths).
 Base method. Expected to be incremented downstrem.</p>
 <dl class="field-list simple">
@@ -173,7 +181,7 @@ Base method. Expected to be incremented downstrem.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.base.DataSet.view">
-<span class="sig-name descname"><span class="pre">view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.base.DataSet.view" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/base.html#DataSet.view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.base.DataSet.view" title="Link to this definition">¶</a></dt>
 <dd><p>Get a basic visualization.
 Expected to overwrite superior methods.</p>
 <dl class="field-list simple">
@@ -218,36 +226,36 @@ Expected to overwrite superior methods.</p>
 <span id="zenith-dataset-budget-module"></span><h2>zenith.dataset.budget module<a class="headerlink" href="#module-zenith.dataset.budget" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="zenith.dataset.budget.Budget">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zenith.dataset.budget.</span></span><span class="sig-name descname"><span class="pre">Budget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MyBudget'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Bud'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.budget.Budget" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zenith.dataset.budget.</span></span><span class="sig-name descname"><span class="pre">Budget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MyBudget'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Bud'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/budget.html#Budget"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.budget.Budget" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#zenith.dataset.record_table.RecordTable" title="zenith.dataset.record_table.RecordTable"><code class="xref py py-class docutils literal notranslate"><span class="pre">RecordTable</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.budget.Budget.get_summary_by_contract">
-<span class="sig-name descname"><span class="pre">get_summary_by_contract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.budget.Budget.get_summary_by_contract" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_summary_by_contract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/budget.html#Budget.get_summary_by_contract"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.budget.Budget.get_summary_by_contract" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.budget.Budget.get_summary_by_status">
-<span class="sig-name descname"><span class="pre">get_summary_by_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.budget.Budget.get_summary_by_status" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_summary_by_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/budget.html#Budget.get_summary_by_status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.budget.Budget.get_summary_by_status" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.budget.Budget.get_summary_by_tags">
-<span class="sig-name descname"><span class="pre">get_summary_by_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.budget.Budget.get_summary_by_tags" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_summary_by_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/budget.html#Budget.get_summary_by_tags"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.budget.Budget.get_summary_by_tags" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.budget.Budget.get_summary_by_type">
-<span class="sig-name descname"><span class="pre">get_summary_by_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.budget.Budget.get_summary_by_type" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_summary_by_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/budget.html#Budget.get_summary_by_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.budget.Budget.get_summary_by_type" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.budget.Budget.parse_annual_budget">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_annual_budget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">budget_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq_field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Freq'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.budget.Budget.parse_annual_budget" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_annual_budget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">budget_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq_field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Freq'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/budget.html#Budget.parse_annual_budget"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.budget.Budget.parse_annual_budget" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.budget.Budget.set_data">
-<span class="sig-name descname"><span class="pre">set_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.budget.Budget.set_data" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_df</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/budget.html#Budget.set_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.budget.Budget.set_data" title="Link to this definition">¶</a></dt>
 <dd><p>Set RecordTable data from incoming dataframe.
 Expected to be incremented downstream.</p>
 <dl class="field-list simple">
@@ -265,7 +273,7 @@ Expected to be incremented downstream.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.budget.Budget.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.budget.Budget.update" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/budget.html#Budget.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.budget.Budget.update" title="Link to this definition">¶</a></dt>
 <dd><p>Refresh all mutable attributes based on data (includins paths).
 Base method. Expected to be incremented downstrem.</p>
 <dl class="field-list simple">
@@ -285,7 +293,7 @@ Base method. Expected to be incremented downstrem.</p>
 <span id="zenith-dataset-file-sys-module"></span><h2>zenith.dataset.file_sys module<a class="headerlink" href="#module-zenith.dataset.file_sys" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zenith.dataset.file_sys.</span></span><span class="sig-name descname"><span class="pre">FileSys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_base</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MyFS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FS0'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zenith.dataset.file_sys.</span></span><span class="sig-name descname"><span class="pre">FileSys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_base</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MyFS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FS0'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#zenith.dataset.base.DataSet" title="zenith.dataset.base.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a></p>
 <p>The core <code class="docutils literal notranslate"><span class="pre">FileSys</span></code> base/demo object. File System object.
 Useful for complex folder structure setups and controlling the status_t1
@@ -294,7 +302,7 @@ This is a Base and Dummy object. Expected to be implemented downstream for
 custom applications.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.archive_folder">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">archive_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dst_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.archive_folder" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">archive_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dst_dir</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.archive_folder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.archive_folder" title="Link to this definition">¶</a></dt>
 <dd><p>archive to a zip folder</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -314,12 +322,12 @@ custom applications.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.backup">
-<span class="sig-name descname"><span class="pre">backup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'v-0-0'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.backup" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">backup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'v-0-0'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.backup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.backup" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.check_file_status">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_file_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.check_file_status" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_file_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.check_file_status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.check_file_status" title="Link to this definition">¶</a></dt>
 <dd><p>Static method for file existing checkup</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -336,7 +344,7 @@ custom applications.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.copy_batch">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">copy_batch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst_pattern</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_pattern</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.copy_batch" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">copy_batch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst_pattern</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src_pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.copy_batch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.copy_batch" title="Link to this definition">¶</a></dt>
 <dd><p>Util static method for batch-copying pattern-based files.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -360,7 +368,7 @@ custom applications.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.fill">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_struct</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.fill" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_struct</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.fill"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.fill" title="Link to this definition">¶</a></dt>
 <dd><p>Recursive function for filling the <code class="docutils literal notranslate"><span class="pre">FileSys</span></code> structure</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -380,12 +388,12 @@ custom applications.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.get_extensions">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_extensions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.get_extensions" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_extensions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.get_extensions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.get_extensions" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.get_metadata">
-<span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.get_metadata" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.get_metadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.get_metadata" title="Link to this definition">¶</a></dt>
 <dd><p>Get a dictionary with object metadata.
 Expected to increment superior methods.</p>
 <div class="admonition note">
@@ -404,12 +412,12 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.get_status">
-<span class="sig-name descname"><span class="pre">get_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.get_status" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.get_status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.get_status" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.get_structure">
-<span class="sig-name descname"><span class="pre">get_structure</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.get_structure" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_structure</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.get_structure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.get_structure" title="Link to this definition">¶</a></dt>
 <dd><p>Get FileSys structure dictionary. Expected to overwrite superior methods</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -423,7 +431,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.load_data">
-<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.load_data" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.load_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.load_data" title="Link to this definition">¶</a></dt>
 <dd><p>Load data from file. Expected to overwrite superior methods.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -440,7 +448,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.make_dir">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">str_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.make_dir" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">str_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.make_dir"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.make_dir" title="Link to this definition">¶</a></dt>
 <dd><p>Util function for making a diretory</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -457,7 +465,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.merge_pdfs">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">merge_pdfs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst_pdfs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dst_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.merge_pdfs" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">merge_pdfs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst_pdfs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dst_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.merge_pdfs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.merge_pdfs" title="Link to this definition">¶</a></dt>
 <dd><p>Merge PDF files to a single PDF</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -478,7 +486,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.set">
-<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_setter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.set" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_setter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.set"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.set" title="Link to this definition">¶</a></dt>
 <dd><p>Set selected attributes based on an incoming dictionary.
 Expected to increment superior methods.</p>
 <dl class="field-list simple">
@@ -493,7 +501,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.setup">
-<span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.setup" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.setup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.setup" title="Link to this definition">¶</a></dt>
 <dd><p>This method sets up all the FileSys structure (default folders and files)</p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
@@ -503,7 +511,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.update" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.update" title="Link to this definition">¶</a></dt>
 <dd><p>Refresh all mutable attributes based on data (includins paths).
 Base method. Expected to be incremented downstrem.</p>
 <dl class="field-list simple">
@@ -518,7 +526,7 @@ Base method. Expected to be incremented downstrem.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.file_sys.FileSys.view">
-<span class="sig-name descname"><span class="pre">view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.view" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/file_sys.html#FileSys.view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.file_sys.FileSys.view" title="Link to this definition">¶</a></dt>
 <dd><p>Get a basic visualization.
 Expected to overwrite superior methods.</p>
 <dl class="field-list simple">
@@ -562,7 +570,7 @@ Expected to overwrite superior methods.</p>
 <span id="zenith-dataset-record-table-module"></span><h2>zenith.dataset.record_table module<a class="headerlink" href="#module-zenith.dataset.record_table" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zenith.dataset.record_table.</span></span><span class="sig-name descname"><span class="pre">RecordTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MyRecordTable'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'RcT'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zenith.dataset.record_table.</span></span><span class="sig-name descname"><span class="pre">RecordTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MyRecordTable'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'RcT'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#zenith.dataset.base.DataSet" title="zenith.dataset.base.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a></p>
 <p>The core object for Record Tables. A Record is expected to keep adding stamped records
 in order to keep track of large inventories, catalogs, etc.
@@ -666,7 +674,7 @@ All records are expected to have a unique Id. It is considered to be a relationa
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.archive_record">
-<span class="sig-name descname"><span class="pre">archive_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.archive_record" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">archive_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.archive_record"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.archive_record" title="Link to this definition">¶</a></dt>
 <dd><p>Archive a record in the RT, that is <code class="docutils literal notranslate"><span class="pre">RecStatus</span></code> = <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -683,7 +691,7 @@ All records are expected to have a unique Id. It is considered to be a relationa
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.edit_record">
-<span class="sig-name descname"><span class="pre">edit_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dict_rec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.edit_record" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">edit_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dict_rec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.edit_record"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.edit_record" title="Link to this definition">¶</a></dt>
 <dd><p>Edit RT record</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -704,7 +712,7 @@ All records are expected to have a unique Id. It is considered to be a relationa
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.export">
-<span class="sig-name descname"><span class="pre">export</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_export</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_archive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.export" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">export</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_export</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_archive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.export"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.export" title="Link to this definition">¶</a></dt>
 <dd><p>Export the <code class="docutils literal notranslate"><span class="pre">RecordTable</span></code> data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -725,7 +733,7 @@ All records are expected to have a unique Id. It is considered to be a relationa
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.export_record">
-<span class="sig-name descname"><span class="pre">export_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_export</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.export_record" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">export_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_export</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.export_record"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.export_record" title="Link to this definition">¶</a></dt>
 <dd><p>Export a record from the table to a <code class="docutils literal notranslate"><span class="pre">csv</span></code> file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -746,7 +754,7 @@ All records are expected to have a unique Id. It is considered to be a relationa
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.get_record">
-<span class="sig-name descname"><span class="pre">get_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.get_record" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.get_record"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.get_record" title="Link to this definition">¶</a></dt>
 <dd><p>Get a record dict by id</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -763,7 +771,7 @@ All records are expected to have a unique Id. It is considered to be a relationa
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.get_record_df">
-<span class="sig-name descname"><span class="pre">get_record_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.get_record_df" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_record_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rec_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.get_record_df"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.get_record_df" title="Link to this definition">¶</a></dt>
 <dd><p>Get a record dataframe by id</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -780,7 +788,7 @@ All records are expected to have a unique Id. It is considered to be a relationa
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.get_timestamp">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_timestamp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.get_timestamp" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_timestamp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.get_timestamp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.get_timestamp" title="Link to this definition">¶</a></dt>
 <dd><p>Return a string timestamp</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -794,7 +802,7 @@ All records are expected to have a unique Id. It is considered to be a relationa
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.insert_record">
-<span class="sig-name descname"><span class="pre">insert_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_rec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.insert_record" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">insert_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_rec</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.insert_record"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.insert_record" title="Link to this definition">¶</a></dt>
 <dd><p>Insert a record in the RT</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -811,7 +819,7 @@ All records are expected to have a unique Id. It is considered to be a relationa
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.load_data">
-<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.load_data" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.load_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.load_data" title="Link to this definition">¶</a></dt>
 <dd><p>Load data from file.
 Expected to overwrite superior methods.</p>
 <dl class="field-list simple">
@@ -829,7 +837,7 @@ Expected to overwrite superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.load_record_data">
-<span class="sig-name descname"><span class="pre">load_record_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_record_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Field'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Value'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.load_record_data" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_record_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_record_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Field'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Value'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.load_record_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.load_record_data" title="Link to this definition">¶</a></dt>
 <dd><p>Load record data from a <code class="docutils literal notranslate"><span class="pre">csv</span></code> file to a dict</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -854,7 +862,7 @@ Expected to overwrite superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.refresh_data">
-<span class="sig-name descname"><span class="pre">refresh_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.refresh_data" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">refresh_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.refresh_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.refresh_data" title="Link to this definition">¶</a></dt>
 <dd><p>Refresh data method for the object operator.
 Performs spreadsheet-like formulas for columns.</p>
 <dl class="field-list simple">
@@ -869,7 +877,7 @@ Performs spreadsheet-like formulas for columns.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.running_time">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">running_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_datetimes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'raw'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.running_time" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">running_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_datetimes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'raw'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.running_time"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.running_time" title="Link to this definition">¶</a></dt>
 <dd><p>Util static method for computing the runnning time for a list of starting dates</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -889,7 +897,7 @@ Performs spreadsheet-like formulas for columns.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.save">
-<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.save" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.save"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.save" title="Link to this definition">¶</a></dt>
 <dd><p>Save the data to the sourced file data.</p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
@@ -907,7 +915,7 @@ Performs spreadsheet-like formulas for columns.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.set">
-<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_setter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.set" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_setter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.set"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.set" title="Link to this definition">¶</a></dt>
 <dd><p>Set selected attributes based on an incoming dictionary.
 Expected to increment superior methods.</p>
 <dl class="field-list simple">
@@ -922,7 +930,7 @@ Expected to increment superior methods.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.set_data">
-<span class="sig-name descname"><span class="pre">set_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.set_data" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.set_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.set_data" title="Link to this definition">¶</a></dt>
 <dd><p>Set RecordTable data from incoming dataframe.
 It handles if the dataframe has or not the required RT columns
 Base Method. Expected to be incremented downstream.</p>
@@ -945,7 +953,7 @@ Base Method. Expected to be incremented downstream.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.timedelta_disagg">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timedelta_disagg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timedelta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.timedelta_disagg" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timedelta_disagg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timedelta</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.timedelta_disagg"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.timedelta_disagg" title="Link to this definition">¶</a></dt>
 <dd><p>Util static method for dissaggregation of time delta</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -962,7 +970,7 @@ Base Method. Expected to be incremented downstream.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.timedelta_to_str">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timedelta_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timedelta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dct_struct</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.timedelta_to_str" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timedelta_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timedelta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dct_struct</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.timedelta_to_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.timedelta_to_str" title="Link to this definition">¶</a></dt>
 <dd><p>Util static method for string conversion of timedelta</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -982,7 +990,7 @@ Base Method. Expected to be incremented downstream.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zenith.dataset.record_table.RecordTable.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.update" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/zenith/dataset/record_table.html#RecordTable.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#zenith.dataset.record_table.RecordTable.update" title="Link to this definition">¶</a></dt>
 <dd><p>Refresh all mutable attributes based on data (includins paths).
 Base method. Expected to be incremented downstrem.</p>
 <dl class="field-list simple">
@@ -998,6 +1006,9 @@ Base method. Expected to be incremented downstrem.</p>
 </dd></dl>
 
 </section>
+<section id="module-zenith.dataset">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-zenith.dataset" title="Link to this heading">¶</a></h2>
+</section>
 </section>
 
 
@@ -1007,7 +1018,7 @@ Base method. Expected to be incremented downstrem.</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Zenith</a></h1>
+<h1 class="logo"><a href="index.html">zenith</a></h1>
 
 
 
@@ -1028,7 +1039,7 @@ Base method. Expected to be incremented downstrem.</p>
 <script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">zenith</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="zenith.html">zenith package</a></li>
 </ul>
 </li>
@@ -1038,7 +1049,7 @@ Base method. Expected to be incremented downstrem.</p>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="modules.html">src</a><ul>
+  <li><a href="modules.html">zenith</a><ul>
   <li><a href="zenith.html">zenith package</a><ul>
       <li>Previous: <a href="zenith.html" title="previous chapter">zenith package</a></li>
   </ul></li>
@@ -1059,7 +1070,7 @@ Base method. Expected to be incremented downstrem.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &#169;2025, Juliano & Iporã.
+      &#169;2025, Iporã Brito Possantti.
       
       |
       Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>

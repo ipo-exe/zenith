@@ -1,13 +1,3 @@
-# Tell Sphinx where your code is
-import os
-import sys
-import pprint # debug
-
-sys.path.insert(0, os.path.abspath('../src'))
-#for x in os.walk('../src'):
-#  sys.path.insert(0, x[0])
-pprint.pprint(sys.path)
-
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -16,23 +6,27 @@ pprint.pprint(sys.path)
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Zenith'
-copyright = '2025, Juliano & Iporã'
-author = 'Juliano & Iporã'
+project = 'zenith'
+copyright = '2025, Iporã Brito Possantti'
+author = 'Iporã Brito Possantti'
 release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "sphinx.ext.autodoc",  # enables docstring parsing
-    "sphinx.ext.napoleon", # Google-style / NumPy-style docstrings
+    'sphinx.ext.autodoc',
+    # Readers can view the actual Python source of your functions/classes/modules directly from the docs.
+    # Especially useful for open-source or public APIs.
+    'sphinx.ext.viewcode',
+
+    'sphinx.ext.githubpages',
 ]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-
+language = 'en'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -40,4 +34,11 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'alabaster'
 html_static_path = ['_static']
 
+# For autodoc to find the package
+import sys
+from pathlib import Path
 
+sys.path.insert(0, str(Path('..', 'src').resolve()))
+
+# For autodoc to use the type hinting
+autodoc_typehints = "description"

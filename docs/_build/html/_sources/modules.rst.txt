@@ -1,5 +1,5 @@
-src
-===
+zenith
+======
 
 .. toctree::
    :maxdepth: 4

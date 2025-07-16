@@ -1,11 +1,6 @@
 zenith.dataset package
 ======================
 
-.. automodule:: zenith.dataset
-   :members:
-   :show-inheritance:
-   :undoc-members:
-
 Submodules
 ----------
 
@@ -37,6 +32,14 @@ zenith.dataset.record\_table module
 -----------------------------------
 
 .. automodule:: zenith.dataset.record_table
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: zenith.dataset
    :members:
    :show-inheritance:
    :undoc-members:

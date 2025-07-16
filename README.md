@@ -5,6 +5,68 @@ Check out updated [General Principles](https://github.com/ipo-exe/zenith/blob/ma
 
 ---
 
+## Sphinx dive in
+
+**Sphinx** has a quickstart CLI. For instance, to create the following in the `docs` source directory:
+- Separate source and build directories: no
+- Project name: zenith
+- Author name: Iporã Brito Possantti
+- Project release: 0.0.1
+- Project language: en  
+`sphinx-quickstart docs --no-sep --project zenith --author "Iporã Brito Possantti" --release 0.0.1 --language en --ext-autodoc`
+
+This creates
+| file | description |
+|---|---|
+|conf.py| configuration|
+|index.rst | table of content tree - toctree |
+
+index.rst comes with the toctree rst directive, which is basically allows nesting rsts. Also the `ref` role allows cross-references to exist.
+
+### Extensions
+Useful extensions to add in the `conf.py`
+```py
+extensions = [
+    'sphinx.ext.autodoc',
+
+    # Readers can view the actual Python source of your functions/classes/modules directly from the docs.
+    # Especially useful for open-source or public APIs.
+    'sphinx.ext.viewcode',
+
+    'sphinx.ext.githubpages',
+]
+```
+#### Autodoc
+
+Add this to conf.py if sphinx source root is kept in `./docs` and your package in `./src/package_name`
+```python
+# For autodoc
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path('..', 'src').resolve()))
+
+# For autodoc to use the type hinting
+autodoc_typehints = "description"
+```
+Auto generate the .rst from package
+`sphinx-apidoc -o docs package_name`
+> to force overwrite, add `-f`
+
+#### Git Hub Pages
+
+### Build 
+This generates the html page
+`sphinx-build -M html docs docs/_built`
+
+to let it autobuild, every time a change occurs
+`sphinx-autobuild docs docs/_built`
+
+> Watch out for `WARNING: XXX not included in toctree` (add them in index.rst)
+
+
+---
+
 Objective: 
 1. Repositorio tem site para hospedar docsites? (SPHINX, como funciona?)
 1. Importar o PLANS, importar o LOS ALAMOS (repos são toolings, LosAlamos é para pesquisa)

@@ -1,11 +1,6 @@
 zenith package
 ==============
 
-.. automodule:: zenith
-   :members:
-   :show-inheritance:
-   :undoc-members:
-
 Subpackages
 -----------
 
@@ -33,6 +28,14 @@ zenith.collection module
    :show-inheritance:
    :undoc-members:
 
+zenith.example4 module
+----------------------
+
+.. automodule:: zenith.example4
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 zenith.note module
 ------------------
 
@@ -45,6 +48,14 @@ zenith.root module
 ------------------
 
 .. automodule:: zenith.root
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: zenith
    :members:
    :show-inheritance:
    :undoc-members:
