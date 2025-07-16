@@ -8,7 +8,27 @@ Check out updated [General Principles](https://github.com/ipo-exe/zenith/blob/ma
 Objective: 
 1. Repositorio tem site para hospedar docsites? (SPHINX, como funciona?)
 1. Importar o PLANS, importar o LOS ALAMOS (repos são toolings, LosAlamos é para pesquisa)
-1. Em tempo real atualizar o root conforme novos projetos surgem. Como fica o fluxo?
+1. Em tempo real atualizar o root conforme novos projetos surgem. Como fica o fluxo?  
+R.: `uv add <aliasName>@git+https://github.com/ipo-exe/losalamos.git@<branch/commit/tag>`
+
+base_object -> base_class
+(it is a class)
+botar a documentacao do PLANS e os .rst para ver lado a lado
+
+PLANS tem que ter um Manual para o usuario e nao so para o programador.
+Ver se ha TODO tree no Pycharm
+Zenith eh modelo para os projetos
+
+ver como bota o uv no google collab, como chamar outros python no collab
+test/benchmarking
+test/unitest ou pytest
+qnd roda o apidocs do Sphinx, ver como fazer mudan;as adicionais nos .rst
+static page
+Como fariamos para nao usar o Read-docs e emular tudo?
+
+- Baixa o PLANS em um ambiente, roda build pelo sistema, roda sphinx apidocs,
+- Se n houve erro, copia os html pro ipora github static pages, faz o commit
+- Ajuste o README.md com a badge de 100% passado ou nao
 
 A serious project, like a library thought to be used by others, must follow principles, such as using `tests` to ensure it stays stable; naming must be universal and logical.
 
