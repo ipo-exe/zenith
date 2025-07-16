@@ -54,6 +54,77 @@ Auto generate the .rst from package
 > to force overwrite, add `-f`
 
 #### Git Hub Pages
+1. Manually push to gh-pages Branch (Manual Setup)
+    1. Build your docs `make html`
+    1. Switch to a separate orphan branch:  
+`git checkout --orphan gh-pages`
+    1. Remove all tracked files and add the build  
+    ```bash
+    git rm -rf .
+    cp -r docs/_build/html/* .
+    touch .nojekyll  # (optional if you already use sphinx.ext.githubpages)
+    ```
+
+    4. Commit and push:
+    ```bash
+    git add .
+    git commit -m "Deploy Sphinx docs to GitHub Pages"
+    git push origin gh-pages --force
+    ```
+
+    5. On GitHub:  
+    Go to your repository → Settings → Pages  
+    Choose:    
+        Source: gh-pages  
+        Folder: / (root)
+
+Your docs will be available at:  
+`https://<your-username>.github.io/<your-repo>/`
+
+2. GitHub Actions - Sphinx docs are built and published everytime you push
+
+Example of `.github/workflows/deploy-docs.yml` to build the docs and push them to gh-pages.
+```yml
+name: Build and Deploy Sphinx Docs
+
+on:
+  push:
+    branches:
+      - main  # or change to your default branch
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.11  # or your preferred Python version
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install sphinx
+        pip install -r docs/requirements.txt || true  # optional, if you use it
+
+    - name: Build HTML docs
+      run: |
+        cd docs
+        make html
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/_build/html
+        publish_branch: gh-pages
+        force_orphan: true
+
+```
 
 ### Build 
 This generates the html page
@@ -73,8 +144,6 @@ Objective:
 1. Em tempo real atualizar o root conforme novos projetos surgem. Como fica o fluxo?  
 R.: `uv add <aliasName>@git+https://github.com/ipo-exe/losalamos.git@<branch/commit/tag>`
 
-base_object -> base_class
-(it is a class)
 botar a documentacao do PLANS e os .rst para ver lado a lado
 
 PLANS tem que ter um Manual para o usuario e nao so para o programador.
