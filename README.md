@@ -23,7 +23,7 @@ Zenith holds the [General Principles](https://github.com/ipo-exe/zenith/blob/mai
 uv run sphinx-quickstart docs --sep --project zenith --author "Iporã Brito Possantti" --release 0.0.1 --language en --ext-autodoc --ext-viewcode --ext-githubpages
 
 # Adjust `conf.py` to use type hinting and to find your `./src/package_name`
-uv run python -c "p='docs/source/conf.py'; l='import sys\\nfrom pathlib import Path\\n\\n# Allow sphinx to find the package\\nsys.path.insert(0, str(Path(\"..\", \"src\").resolve()))\\n\\n# Enable autodoc using type hinting annotations\\nautodoc_typehints = \"description\"\\n\\n'; c=open(p, encoding='utf-8').read(); open(p, 'w', encoding='utf-8').write(l + c)"
+uv run python -c "p='docs/source/conf.py'; l='import sys\\nfrom pathlib import Path\\n\\n# Allow sphinx to find the package\\nconf_dir = Path(__file__).parent\nsys.path.insert(0, str((conf_dir.parent.parent / \"src\").resolve()))\\n\\n# Enable autodoc using type hinting annotations\\nautodoc_typehints = \"description\"\\n\\n'; c=open(p, encoding='utf-8').read(); open(p, 'w', encoding='utf-8').write(l + c)"
 ```
 
 index.rst comes with the toctree rst directive, which is basically allows nesting rsts. Also the `ref` role allows cross-references to exist.
