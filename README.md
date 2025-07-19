@@ -1,30 +1,24 @@
 # 🌟 zenith 🌟
-Zenith holds the [General Principles](https://github.com/ipo-exe/zenith/blob/main/principles.md).
+Zenith holds the [General Principles](https://github.com/ipo-exe/zenith/blob/main/principles.md) and is a model for projects
 
-Objective: 
-1. Repositorio tem site para hospedar docsites? (SPHINX, como funciona?)
-1. Importar o PLANS, importar o LOS ALAMOS (repos são toolings, LosAlamos é para pesquisa)
+Stable libraries have `tests` it stays stable; naming must be universal and logical for the community.
+
+Short-term tasks: 
+1. Repositorio tem site para hospedar docsites? (SPHINX, como funciona?)  
+  \>> A documentacao do PLANS deve ter certos `.rst` que queremos evitar sobrescrever. Por exemplo, "PLANS tem que ter um Manual para o usuario e nao so para o programador". Discutir com Iporã  
+  \>> Ajuste o README.md com a badge de 100% passado ou nao
+
+1. Como importar os _tooling repos_ PLANS e, para pesquisa, LOS ALAMOS?  
+  \>> Via `uv install git_url`.  
+  ! Fazer funcionar no `Google Collab`
+
 1. Em tempo real atualizar o root conforme novos projetos surgem. Como fica o fluxo?  
 R.: `uv add <aliasName>@git+https://github.com/ipo-exe/losalamos.git@<branch/commit/tag>`
 
-botar a documentacao do PLANS e os .rst para ver lado a lado
+Extra: Ver se ha TODO tree no Pycharm
 
-PLANS tem que ter um Manual para o usuario e nao so para o programador.
-Ver se ha TODO tree no Pycharm
-Zenith eh modelo para os projetos
-
-ver como bota o uv no google collab, como chamar outros python no collab
-test/benchmarking
-test/unitest ou pytest
-qnd roda o apidocs do Sphinx, ver como fazer mudan;as adicionais nos .rst
-static page
-Como fariamos para nao usar o Read-docs e emular tudo?
-
-- Baixa o PLANS em um ambiente, roda build pelo sistema, roda sphinx apidocs,
-- Se n houve erro, copia os html pro ipora github static pages, faz o commit
-- Ajuste o README.md com a badge de 100% passado ou nao
-
-A serious project, like a library thought to be used by others, must follow principles, such as using `tests` to ensure it stays stable; naming must be universal and logical.
+test/benchmarking  
+test/unitest ou pytest  
 
 ---
 
@@ -107,7 +101,7 @@ uv run sphinx-quickstart docs --sep --project zenith --author "Iporã Brito Poss
 uv run python -c "p='docs/source/conf.py'; l='import sys\\nfrom pathlib import Path\\n\\n# Allow sphinx to find the package\\nconf_dir = Path(__file__).parent\nsys.path.insert(0, str((conf_dir.parent.parent / \"src\").resolve()))\\n\\n# Enable autodoc using type hinting annotations\\nautodoc_typehints = \"description\"\\n\\n'; c=open(p, encoding='utf-8').read(); open(p, 'w', encoding='utf-8').write(l + c)"
 ```
 
-Mind you that `index.rst` comes with the toctree rst directive, which enables nesting rsts. Also the `ref` role allows cross-references to exist.
+Mind you that `index.rst` comes with the toctree rst directive, which enables nesting rsts. Also the `ref` role allows cross-references to exist. The `docs/source/_static` is for `.css, .js, .png, .svg` files
 
 ### **Activate GitHub Actions**: publish docs at every `PUSH`
 
