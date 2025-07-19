@@ -31,7 +31,9 @@ jobs:
       # NOTE: Add --no-toc if you have your own personal index.rst with .. toctree::
 
     - name: Show conf.py contents
-      run: cat docs/source/conf.py
+      run: tree .
+      run: echo "Current Dir is"
+      run: pwd
 
     - name: Build HTML docs
       run: |
