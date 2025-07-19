@@ -21,21 +21,19 @@ jobs:
     - name: Install uv
       run: curl -LsSf https://astral.sh/uv/install.sh | sh
 
-    - name: Install dependencies & build docs
+    - name: Create env & install dependencies
       run: |
         uv sync
-        uv run sphinx-apidoc -o docs/source src/zenith --force --no-toc
-        uv run make -C docs clean html
 
     - name: Generate API docs
       run: |
-        sphinx-apidoc -o docs/source src/zenith --force
+        uv run sphinx-apidoc -o docs/source src/zenith --force
       # NOTE: Add --no-toc if you have your own personal index.rst with .. toctree::
 
     - name: Build HTML docs
       run: |
         cd docs
-        make html SPHINXOPTS=-W
+        uv run make -C docs clean html SPHINXOPTS=-W
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
