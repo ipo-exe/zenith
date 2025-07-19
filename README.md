@@ -10,7 +10,7 @@ Zenith holds the [General Principles](https://github.com/ipo-exe/zenith/blob/mai
 - Author name: Iporã Brito Possantti
 - Project release: 0.0.1
 - Project language: en  
-`sphinx-quickstart docs --no-sep --project zenith --author "Iporã Brito Possantti" --release 0.0.1 --language en --ext-autodoc --ext-viewcode -ext-githubpages`
+`sphinx-quickstart docs --sep --project zenith --author "Iporã Brito Possantti" --release 0.0.1 --language en --ext-autodoc --ext-viewcode --ext-githubpages`
 
 This creates
 | file | description |

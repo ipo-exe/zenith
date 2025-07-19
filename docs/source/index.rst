@@ -1,5 +1,5 @@
 .. zenith documentation master file, created by
-   sphinx-quickstart on Tue Jul 15 22:29:36 2025.
+   sphinx-quickstart on Sat Jul 19 16:23:31 2025.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -15,4 +15,3 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
-   modules
