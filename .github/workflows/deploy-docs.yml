@@ -18,11 +18,14 @@ jobs:
       with:
         python-version: 3.11  # or your preferred Python version
 
-    - name: Install dependencies
+    - name: Install uv
+      run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+    - name: Install dependencies & build docs
       run: |
-        python -m pip install --upgrade pip
-        pip install sphinx
-        pip install -r docs/requirements.txt || true  # optional, if you use it
+        uv install
+        uv run sphinx-apidoc -o docs/source src/zenith --force --no-toc
+        uv run make -C docs clean html
 
     - name: Generate API docs
       run: |
