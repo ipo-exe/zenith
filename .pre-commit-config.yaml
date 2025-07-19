@@ -7,19 +7,17 @@ repos:
           sh -c '
           branch=$(git rev-parse --abbrev-ref HEAD);
           if [ "$branch" != "main" ]; then
-            echo "Not on main branch ($branch), skipping zenith update.";
+            echo "Not on main branch ($branch), skipping zenith update." >&2;
             exit 0;
           fi;
           output=$(uv add --upgrade git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx 2>&1);
           if echo "$output" | grep -q "Successfully installed"; then
-            echo "Zenith atualizado. Teste e refaça o commit.";
-            code=1;
+            echo "Zenith atualizado. Teste e refaça o commit." >&2;
+            exit 1;
           else
-            echo "Zenith: nenhum commit novo.";
-            code=0;
+            echo "Zenith: nenhum commit novo." >&2;
+            exit 0;
           fi;
-          echo "Hook executado.";
-          exit $code;
           '
         language: system
         stages: [pre-commit]
