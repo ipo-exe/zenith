@@ -26,7 +26,8 @@ jobs:
 
     - name: Generate API docs
       run: |
-        sphinx-apidoc -o docs zenith
+        sphinx-apidoc -o docs src/zenith --force
+      # NOTE: Add --no-toc if you have your own personal index.rst with .. toctree::
 
     - name: Build HTML docs
       run: |
