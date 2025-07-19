@@ -20,4 +20,4 @@ repos:
           fi
           '
         language: system
-        stages: [commit]
+        stages: [pre-commit]

@@ -16,7 +16,8 @@ Short-term tasks:
 
 
 1. Em tempo real atualizar o root conforme novos projetos surgem. Como fica o fluxo?  
-  \>> Adicionei o `.pre-commit-config.yaml` para sempre fazer o `uv` atualizar antes de cada commit  
+   \>> Adicionei o `.pre-commit-config.yaml` para sempre fazer o `uv` atualizar antes de cada commit
+   \>> Deve adicionar `pre-commit` ao projeto  
 R.: `uv add <aliasName>@git+https://github.com/ipo-exe/losalamos.git@<branch/commit/tag>`
 
 Extra: Ver se ha TODO tree no Pycharm
