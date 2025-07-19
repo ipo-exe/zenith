@@ -39,3 +39,9 @@ language = 'en'
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+
+
+import os
+print(f"Current working directory: {os.getcwd()}")
+print(f"sys.path before insert: {sys.path}")
+print(f"Resolved src path: {str(Path('..', 'src').resolve())}")
