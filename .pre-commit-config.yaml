@@ -2,7 +2,22 @@ repos:
   - repo: local
     hooks:
       - id: update-zenith
-        name: Update zenith package
-        entry: uv add --upgrade git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx
+        name: Update zenith package if on main branch
+        entry: >
+          sh -c '
+          branch=$(git rev-parse --abbrev-ref HEAD);
+          if [ "$branch" != "main" ]; then
+            echo "Not on main branch ($branch), skipping zenith update.";
+            exit 0;
+          fi;
+          output=$(uv add --upgrade git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx 2>&1);
+          if echo "$output" | grep -q "Successfully installed"; then
+            echo "Zenith atualizado. Teste e refaça o commit.";
+            exit 1;
+          else
+            echo "Zenith: nenhum commit novo.";
+            exit 0;
+          fi
+          '
         language: system
         stages: [commit]
