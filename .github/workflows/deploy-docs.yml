@@ -23,7 +23,7 @@ jobs:
 
     - name: Install dependencies & build docs
       run: |
-        uv install
+        uv sync
         uv run sphinx-apidoc -o docs/source src/zenith --force --no-toc
         uv run make -C docs clean html
 
