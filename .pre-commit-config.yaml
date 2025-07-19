@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: update-zenith
+        name: Update zenith package
+        entry: uv add --upgrade git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx
+        language: system
+        stages: [commit]

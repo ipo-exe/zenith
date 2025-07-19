@@ -9,8 +9,11 @@ Short-term tasks:
   \>> Ajuste o README.md com a badge de 100% passado ou nao
 
 1. Como importar os _tooling repos_ PLANS e, para pesquisa, LOS ALAMOS?  
-  \>> Via `uv install git_url`.  
-  ! Fazer funcionar no `Google Collab`
+  \>> No ambiente local com `uv`,
+  `!uv add git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx`
+  \>> No `Google Collab`,  
+  `!pip install git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx`
+
 
 1. Em tempo real atualizar o root conforme novos projetos surgem. Como fica o fluxo?  
 R.: `uv add <aliasName>@git+https://github.com/ipo-exe/losalamos.git@<branch/commit/tag>`
