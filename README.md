@@ -2,7 +2,7 @@
 Zenith holds the [General Principles](https://github.com/ipo-exe/zenith/blob/main/principles.md).
 
 
-## AutoDoc - Sphinx dive in
+## Code Documentation via Sphinx
 
 **Sphinx** has a quickstart CLI. For instance, to create the following in the `docs` source directory:
 - Separate source and build directories: no
@@ -10,42 +10,26 @@ Zenith holds the [General Principles](https://github.com/ipo-exe/zenith/blob/mai
 - Author name: Iporã Brito Possantti
 - Project release: 0.0.1
 - Project language: en  
-`sphinx-quickstart docs --sep --project zenith --author "Iporã Brito Possantti" --release 0.0.1 --language en --ext-autodoc --ext-viewcode --ext-githubpages`
+- Use extensions:
+  - AutoDoc
+  - ViewCode:  
+    _Readers can view the actual Python source of your functions/classes/modules directly from the docs. Especially useful for open-source or public APIs._
+  - GitHubPages
+```bash
+# Run at root to create the 'docs' folder in separate mode.
+#   docs/source - .rst files & conf.py
+#   docs/build  - build output
+#   docs        - keeps 'make.bat' and 'Makefile'
+uv run sphinx-quickstart docs --sep --project zenith --author "Iporã Brito Possantti" --release 0.0.1 --language en --ext-autodoc --ext-viewcode --ext-githubpages
 
-This creates
-| file | description |
-|---|---|
-|conf.py| configuration|
-|index.rst | table of content tree - toctree |
+# Adjust `conf.py` to use type hinting and to find your `./src/package_name`
+uv run python -c "p='docs/source/conf.py'; l='import sys\\nfrom pathlib import Path\\n\\n# Allow sphinx to find the package\\nsys.path.insert(0, str(Path(\"..\", \"src\").resolve()))\\n\\n# Enable autodoc using type hinting annotations\\nautodoc_typehints = \"description\"\\n\\n'; c=open(p, encoding='utf-8').read(); open(p, 'w', encoding='utf-8').write(l + c)"
+```
 
 index.rst comes with the toctree rst directive, which is basically allows nesting rsts. Also the `ref` role allows cross-references to exist.
 
-### Extensions
-Useful extensions to add in the `conf.py`
-```py
-extensions = [
-    'sphinx.ext.autodoc',
 
-    # Readers can view the actual Python source of your functions/classes/modules directly from the docs.
-    # Especially useful for open-source or public APIs.
-    'sphinx.ext.viewcode',
-
-    'sphinx.ext.githubpages',
-]
-```
 #### Autodoc
-
-Add this to conf.py if sphinx source root is kept in `./docs` and your package in `./src/package_name`
-```python
-# For autodoc
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path('..', 'src').resolve()))
-
-# For autodoc to use the type hinting
-autodoc_typehints = "description"
-```
 Auto generate the .rst from package
 `sphinx-apidoc -o docs package_name`
 > to force overwrite, add `-f`

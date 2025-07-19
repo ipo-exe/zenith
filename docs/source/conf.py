@@ -1,3 +1,12 @@
+import sys
+from pathlib import Path
+
+# Allow sphinx to find the package
+sys.path.insert(0, str(Path("..", "src").resolve()))
+
+# Enable autodoc using type hinting annotations
+autodoc_typehints = "description"
+
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
