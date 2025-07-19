@@ -1,11 +1,8 @@
 # 🌟 zenith 🌟
-Zenith holds the core principles for working efficiently
+Zenith holds the [General Principles](https://github.com/ipo-exe/zenith/blob/main/principles.md).
 
-Check out updated [General Principles](https://github.com/ipo-exe/zenith/blob/main/principles.md).
 
----
-
-## Sphinx dive in
+## AutoDoc - Sphinx dive in
 
 **Sphinx** has a quickstart CLI. For instance, to create the following in the `docs` source directory:
 - Separate source and build directories: no
@@ -13,7 +10,7 @@ Check out updated [General Principles](https://github.com/ipo-exe/zenith/blob/ma
 - Author name: Iporã Brito Possantti
 - Project release: 0.0.1
 - Project language: en  
-`sphinx-quickstart docs --no-sep --project zenith --author "Iporã Brito Possantti" --release 0.0.1 --language en --ext-autodoc`
+`sphinx-quickstart docs --no-sep --project zenith --author "Iporã Brito Possantti" --release 0.0.1 --language en --ext-autodoc --ext-viewcode -ext-githubpages`
 
 This creates
 | file | description |
