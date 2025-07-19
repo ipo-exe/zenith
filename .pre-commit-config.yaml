@@ -13,11 +13,13 @@ repos:
           output=$(uv add --upgrade git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx 2>&1);
           if echo "$output" | grep -q "Successfully installed"; then
             echo "Zenith atualizado. Teste e refaça o commit.";
-            exit 1;
+            code=1;
           else
             echo "Zenith: nenhum commit novo.";
-            exit 0;
-          fi
+            code=0;
+          fi;
+          echo "Hook executado.";
+          exit $code;
           '
         language: system
         stages: [pre-commit]

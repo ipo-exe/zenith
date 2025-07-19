@@ -18,6 +18,8 @@ Short-term tasks:
 1. Em tempo real atualizar o root conforme novos projetos surgem. Como fica o fluxo?  
    \>> Adicionei o `.pre-commit-config.yaml` para sempre fazer o `uv` atualizar antes de cada commit  
    \>> Deve adicionar `uv add --dev pre-commit` ao projeto, e instalar `uv run pre-commit install`  
+   Testar o hook: `uv run pre-commit run update-zenith --all-files -v`
+
 R.: `uv add <aliasName>@git+https://github.com/ipo-exe/losalamos.git@<branch/commit/tag>`
 
 Extra: Ver se ha TODO tree no Pycharm
