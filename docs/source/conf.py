@@ -2,7 +2,8 @@ import sys
 from pathlib import Path
 
 # Allow sphinx to find the package
-sys.path.insert(0, str(Path("..", "src").resolve()))
+conf_dir = Path(__file__).parent
+sys.path.insert(0, str((conf_dir.parent.parent / "src").resolve()))
 
 # Enable autodoc using type hinting annotations
 autodoc_typehints = "description"
