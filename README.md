@@ -1,21 +1,22 @@
 # 🌟 zenith 🌟
-Zenith holds the [General Principles](https://github.com/ipo-exe/zenith/blob/main/principles.md) and is a model for projects
+This is a model for projects and holds the [General Principles](https://github.com/ipo-exe/zenith/blob/main/principles.md)
 
-Stable libraries have `tests` it stays stable; naming must be universal and logical for the community.
+Libraries use `tests` to stay stable; naming must be logical and universal for the community.
 
 Short-term tasks: 
 1. Repositorio tem site para hospedar docsites? (SPHINX, como funciona?)  
-  \>> A documentacao do PLANS deve ter certos `.rst` que queremos evitar sobrescrever. Por exemplo, "PLANS tem que ter um Manual para o usuario e nao so para o programador". Discutir com Iporã  
+  \>> A documentacao do PLANS deve ter certos `.rst` que queremos evitar sobrescrever.   
+  Por exemplo, "PLANS tem que ter um Manual para o usuario e nao so para o programador". Discutir com Iporã  
   \>> Ajuste o README.md com a badge de 100% passado ou nao
 
 1. Como importar os _tooling repos_ PLANS e, para pesquisa, LOS ALAMOS?  
-  \>> No ambiente local com `uv`,
-  `!uv add git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx`
+  \>> No ambiente local com `uv`,  
+  `!uv add git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx`  
   \>> No `Google Collab`,  
   `!pip install git+https://github.com/ipo-exe/zenith.git@docs/trying-sphinx`
 
 
-1. Em tempo real atualizar o root conforme novos projetos surgem. Como fica o fluxo?  
+1. Atualizar em tempo real o root conforme novos projetos surgem. Como fica o fluxo?  
    \>> Adicionei o `.pre-commit-config.yaml` para sempre fazer o `uv` atualizar antes de cada commit  
    \>> Deve adicionar `uv add --dev pre-commit` ao projeto, e instalar `uv run pre-commit install`  
    Testar o hook: `uv run pre-commit run update-zenith --all-files -v`
@@ -29,9 +30,33 @@ test/unitest ou pytest
 
 ---
 
-## 🛠️ Installation
-Get this repository model without the whole git history (shallow clone):  
-`git clone --depth 1 git@github.com:ipo-exe/zenith.git`
+## 1. 🛠️ Start a new project
+Do not clone the entire git history;  
+Execute a shallow clone:  
+```bash
+# via ssh
+git clone --depth 1 https://github.com/ipo-exe/zenith.git
+
+# via https
+git clone --depth 1 git@github.com:ipo-exe/zenith.git
+```
+
+> Iporã perguntou como usar no Google Colab.  
+O Google Colab não foi feito para modularizar um projeto  
+Por isso, não há suporte como debug e etc.  
+Ele de fato, é feito para movimentos rápidos, testes.  
+Amado por cientista de dados porque é facilmente iterativo.  
+Faz sentido para os trabalhos do Iporã? 
+
+> Aparentemente, só seria útil para pip install algum projeto  
+como o Los Alamos ou o PLANS, mas não para trabalhar num  
+projeto sério. O colab não é para desenvolvimento de software.
+
+- 1️⃣ Ciência de dados e aprendizado de máquina
+- 2️⃣ Análise exploratória de dados
+- 3️⃣ Prototipagem rápida
+- Não é ideal para projetos complexos de software com múltiplos arquivos e venvs persistentes.
+- Não há persistência de ambiente
 
 ---
 
@@ -58,7 +83,7 @@ Manage dependencies
 ```bash
 uv add/remove pandas numpy
 ```
-### Custom GitHub lib
+### 2. Custom GitHub lib
 ✅ Add dependency.
 ```bash
 uv add "losalamos@git+https://github.com/ipo-exe/losalamos.git@latest"
@@ -83,7 +108,7 @@ _*All libs use the latest branch as the rolling release._
 
 ---
 
-## Code Documentation via Sphinx
+## 3. Code Documentation via Sphinx
 
 **Sphinx** has a quickstart CLI.  
 To start Sphinx from the root of a project with layout `./src/package` with the following specs:
