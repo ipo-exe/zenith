@@ -1,4 +1,4 @@
-# 🌟 zenith 🌟
+# zenith
 Zenith holds the core principles for working efficiently
 
 Check out updated [General Principles](https://github.com/ipo-exe/zenith/blob/main/principles.md).
@@ -11,6 +11,78 @@ Objective:
 1. Em tempo real atualizar o root conforme novos projetos surgem. Como fica o fluxo?
 
 A serious project, like a library thought to be used by others, must follow principles, such as using `tests` to ensure it stays stable; naming must be universal and logical.
+
+---
+## Repo structure
+
+Zenith repo follows a standard structure:
+
+```
+zenith/
+|
+├── LICENSE
+├── README.md
+├── .gitignore
+├── pyproject.toml
+|
+├── src/                       # src folder
+│    └── zenith/               # lib folder
+│         ├── __init__.py
+│         ├── module1.py
+│         ├── ...
+│         ├── modulex.py
+│         └── data/            # run-time data
+│ 
+├── tests/                     # testing scripts
+│    └── conftest.py
+│    └── unit/                 # unit tests     
+│    │    ├── test_module1.py
+│    │    ├── ...
+│    │    └── test_modulex.py
+│    └── bcmk/                 # benchmarking tests
+│    │    ├── test_bcmk1.py
+│    │    ├── ...
+│    │    └── test_bcmkx.py
+│    └── data/                 # test-only data
+│         ├── test_bcmk1_data1.csv
+│         ├── ...
+│         └── test_bcmkx_datax.tif
+│ 
+├── docs/                      # documentation resources
+│    ├── update.py             # master script for updating doc files   
+│    ├── docs1.md   
+│    ├── ...
+│    ├── docsx.rst
+│    ├── index.rst  (sphinx)
+│    ├── about.rst  (sphinx)
+│    ├── usage.rst  (sphinx)
+│    ├── api.rst    (sphinx)
+│    ├── conf.py    (sphinx)
+│    ├── make.bat   (sphinx)
+│    ├── Makefile   (sphinx)
+│    ├── figs/                 # figs-only data
+│    │    ├── fig1.jpg
+│    │    ├── fig1.svg
+│    │    ├── ...
+│    │    └── gifx.gif                  
+│    ├── data/                 # doc-only data
+│    |    ├── ref.bib
+│    |    ├── ...
+│    |    └── docs.csv
+│    ├── generated/ (sphinx)
+│    └── _build/    (sphinx)
+|
+├── examples/                  # learning resources 
+│    ├── example_tutorial1.ipynb    
+|    ├── ...
+│    └── example_tutorialx.py            
+|
+└── scrips/                    # extra resources 
+     ├── script_routine1.py    
+     ├── ...
+     └── script_routinex.bat    
+
+```
 
 ---
 
